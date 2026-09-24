@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeechat | Cafetería Inclusiva</title>
+    <meta name="description" content="Coffeechat es una cafetería inclusiva en la que trabajan personas con Síndrome de Down y adultos mayores. Ofrecemos café y repostería de alta calidad en un ambiente acogedor.">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts para tipografía clara y legible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para apoyos gráficos e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Botón de salto al contenido principal para accesibilidad por teclado -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="Inicio de Coffeechat">
+                <i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Coffeechat
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="#inicio"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
+                    <li><a href="#menu"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Nuestro Menú</a></li>
+                    <li><a href="#mision"><i class="fa-solid fa-heart" aria-hidden="true"></i> Nuestra Misión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Bienvenidos a Coffeechat</h1>
+                    <p class="lead-text">Una cafetería donde el amor, la inclusión y el buen café se sirven todos los días.</p>
+                    <a href="#menu" class="btn btn-primary btn-large">
+                        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Ver Nuestro Menú
+                    </a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Texto alternativo descriptivo -->
+                    <img src="images/coffeechat_hero_1790265305577.jpg" alt="Interior acogedor de nuestra cafetería Coffeechat con luces cálidas, diseño moderno de madera y clientes felices disfrutando su tiempo" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Misión -->
+        <section id="mision" class="mission-section">
+            <div class="container mission-container">
+                <div class="mission-image-wrapper">
+                    <img src="images/inclusive_team_1790265316491.jpg" alt="Dos de nuestros baristas sonriendo felizmente detrás del mostrador preparándose para servir. Un joven con Síndrome de Down y un adulto mayor trabajando como un gran equipo." class="mission-img">
+                </div>
+                <div class="mission-text">
+                    <h2><i class="fa-solid fa-users" aria-hidden="true"></i> Nuestra Misión</h2>
+                    <p>En <strong>Coffeechat</strong>, creemos que todos merecemos una oportunidad para brillar. Somos una cafetería inclusiva impulsada por el talento y el gran corazón de personas con Síndrome de Down y adultos mayores.</p>
+                    <p>Cada taza de café que servimos está hecha con dedicación, celebrando la diversidad y demostrando que la verdadera calidad nace del trabajo en equipo sin etiquetas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del Menú -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="menu-header">
+                    <h2><i class="fa-solid fa-utensils" aria-hidden="true"></i> Nuestro Menú</h2>
+                    <!-- Botón operable y visible para la lectura de pantalla simulada -->
+                    <button class="btn btn-secondary btn-read-aloud" aria-label="Leer menú en voz alta" onclick="readAloud()">
+                        <i class="fa-solid fa-volume-high" aria-hidden="true"></i> Leer menú en voz alta
+                    </button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Platillo 1 -->
+                    <article class="menu-card" tabindex="0">
+                        <img src="images/latte_art_1790265332456.jpg" alt="Taza de café con hermoso arte latte junto a un cuernito recién horneado sobre una mesa de madera" class="menu-img">
+                        <div class="menu-card-content">
+                            <h3><i class="fa-solid fa-mug-saucer" aria-hidden="true"></i> Café Latte & Cuernito</h3>
+                            <p>Delicioso café con leche acompañado de un pan dulce crujiente. Perfecto para empezar la mañana con energía.</p>
+                            <span class="price" aria-label="Precio: 65 pesos">$65.00</span>
+                        </div>
+                    </article>
+
+                    <!-- Platillo 2 -->
+                    <article class="menu-card" tabindex="0">
+                        <img src="images/carrot_cake_1790267185909.jpg" alt="Rebanada de pastel de zanahoria casero con betún de queso crema servido en un plato" class="menu-img">
+                        <div class="menu-card-content">
+                            <h3><i class="fa-solid fa-slice" aria-hidden="true"></i> Pastel de Zanahoria</h3>
+                            <p>Pastel casero con betún de queso crema. Suave, dulce y horneado con la receta secreta de nuestros abuelos.</p>
+                            <span class="price" aria-label="Precio: 55 pesos">$55.00</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Platillo 3 -->
+                    <article class="menu-card" tabindex="0">
+                        <img src="images/iced_tea_1790267205785.jpg" alt="Vaso refrescante de té helado con rodajas frescas de fresa y durazno sobre una mesa" class="menu-img">
+                        <div class="menu-card-content">
+                            <h3><i class="fa-solid fa-leaf" aria-hidden="true"></i> Té Helado Frutal</h3>
+                            <p>Bebida refrescante de té negro con trozos naturales de durazno y fresa. Ideal para quitar la sed en la tarde.</p>
+                            <span class="price" aria-label="Precio: 45 pesos">$45.00</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Av. Inclusión 123, Col. Centro, Ciudad Ficticia</p>
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
+                <p><strong><i class="fa-solid fa-wheelchair" aria-hidden="true"></i> Instalaciones 100% adaptadas</strong></p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Coffeechat. Todos los derechos reservados.</p>
+                <p class="footer-accessibility"><i class="fa-solid fa-universal-access" aria-hidden="true"></i> Diseñado con amor y accesibilidad en mente.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de Accesibilidad -->
+    <button class="fab-accessibility" aria-label="Opciones de accesibilidad">
+        <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        // Simulador de lectura en voz alta para cumplir con accesibilidad (demostración)
+        function readAloud() {
+            // Se usa alert para simular el comportamiento visualmente en la pantalla estática
+            alert("Lectura en voz alta activada:\n\nNuestro menú.\n1. Café Latte y Cuernito: 65 pesos.\n2. Pastel de Zanahoria: 55 pesos.\n3. Té Helado Frutal: 45 pesos.");
+            
+            // Si fuera una app real, usaríamos SpeechSynthesis API:
+            if ('speechSynthesis' in window) {
+                const textToRead = "Nuestro menú. Café Latte y Cuernito a 65 pesos. Pastel de Zanahoria a 55 pesos. Té Helado Frutal a 45 pesos.";
+                const utterance = new SpeechSynthesisUtterance(textToRead);
+                utterance.lang = 'es-MX';
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+    </script>
+</body>
+</html>
